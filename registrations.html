@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Courses - Foundation Day 2023</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for the registration form */
+        .registration-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-form label {
+            font-weight: bold;
+        }
+
+        .registration-form button {
+            width: 100%;
+        }
+
+        .registration-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .registration-form label {
+            font-weight: bold;
+        }
+
+        .registration-form .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+    </style>
+
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #printSection,
+            #printSection * {
+                visibility: visible;
+            }
+
+            #printSection {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+
+    <!-- =======================================================
+  * Template Name: Mentor
+  * Updated: Aug 30 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Foundation Day 2023</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Competitions</a></li>
+                    <!-- <li><a href="trainers.html">Trainers</a></li> -->
+                    <li><a href="events.html">Demonstrations</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            <a href="registrations.html" class="get-started-btn">Register</a>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main" data-aos="fade-in">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <h2>Registration for Foundation Day 2023</h2>
+                <p>Engage, Learn, and Compete</p>
+            </div>
+        </div>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= Main Section ======= -->
+
+        <!-- ======= Main Section ======= -->
+
+        <!-- Main Registration Section -->
+        <section id="counts" class="counts section-bg">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h2>Please Register your shool here for hassle free experience</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration">
+            <div class="container">
+                <!-- Form Selectors -->
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button class="btn btn-primary mb-3" type="button" data-toggle="collapse"
+                            data-target="#individualForm" aria-expanded="false" aria-controls="individualForm">
+                            Individual Registration
+                        </button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary mb-3" type="button" data-toggle="collapse"
+                            data-target="#schoolForm" aria-expanded="false" aria-controls="schoolForm">
+                            School or Teacher Registration
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Individual Registration Form -->
+                <div class="collapse mt-4 registration-form" id="individualForm">
+                    <form action="/individual_registration" method="post">
+                        <div class="form-group">
+                            <label for="individualName">Name:</label>
+                            <input type="text" id="individualName" name="individualName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="individualSchool">School Name:</label>
+                            <input type="text" id="individualSchool" name="individualSchool" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="individualGrade">Grade/Class:</label>
+                            <input type="text" id="individualGrade" name="individualGrade" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="individualContact">Contact Details:</label>
+                            <input type="tel" id="individualContact" name="individualContact" class="form-control"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="individualEmail">E-mail ID:</label>
+                            <input type="email" id="individualEmail" name="individualEmail" class="form-control"
+                                required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+
+                <!-- School or Teacher Registration Form -->
+                <div class="collapse mt-4 registration-form" id="schoolForm">
+                    <form action="/school_registration" method="post">
+                        <div class="form-group">
+                            <label for="schoolName">School Name:</label>
+                            <input type="text" id="schoolName" name="schoolName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacherName">Teacher's Name:</label>
+                            <input type="text" id="teacherName" name="teacherName" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalStudents">Total Number of Students:</label>
+                            <input type="number" id="totalStudents" name="totalStudents" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gradesSections">Grades/Sections:</label>
+                            <input type="text" id="gradesSections" name="gradesSections" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="arrivalTime">Arrival Time:</label>
+                            <input type="time" id="arrivalTime" name="arrivalTime" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- End Main Section -->
+
+        <!-- End Main Section -->
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Address and Contact Information -->
+                        <div class="col-lg-4 col-md-6 footer-contact">
+                            <h3>IISER Mohali</h3>
+                            <p>
+                                Dean outreach and International Relations <br>
+                                Indian Institure of Science Education and Research (IISER),Mohali <br>
+                                Knowledge city, Sector 81, Manauli, PO<br>
+                                Sahibzada Ajit Singh Nagar, Punjab 140306<br>
+                                India<br><br>
+                                <strong>Phone:</strong> 0172 224 0124<br>
+                                <strong>Email:</strong> deanoutreach@iisermohali.ac.in<br>
+                            </p>
+                        </div>
+
+                        <!-- Useful Links -->
+                        <div class="col-lg-4 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Location Map -->
+                        <div class="col-lg-4 col-md-12">
+                            <h4>Location</h4>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.9410490715145!2d76.72695507631119!3d30.663788474617704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fe956a41db409%3A0x8f96794a996192bb!2sINDIAN%20INSTITUTE%20OF%20SCIENCE%20EDUCATION%20AND%20RESEARCH%2C%20INST%20Hostel%20Rd%2C%20Sector%2081%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140306!5e0!3m2!1sen!2sin!4v1694265091237!5m2!1sen!2sin"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-md-flex py-4">
+
+                <div class="me-md-auto text-center text-md-start">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>IISER-Mohali 2023</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+
+
+        <!-- Vendor JS Files -->
+
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Capture the form submit event for Individual Registration
+              document.getElementById('individualForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Fetch form data
+                const individualName = document.getElementById('individualName').value.trim();
+                const individualSchool = document.getElementById('individualSchool').value.trim();
+                const individualGrade = document.getElementById('individualGrade').value.trim();
+                const individualContact = document.getElementById('individualContact').value.trim();
+                const individualEmail = document.getElementById('individualEmail').value.trim();
+          
+                // Create PDF
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF();
+                pdf.text('Individual Registration Details', 10, 10);
+                pdf.text(`Name: ${individualName}`, 10, 20);
+                pdf.text(`School Name: ${individualSchool}`, 10, 30);
+                pdf.text(`Grade/Class: ${individualGrade}`, 10, 40);
+                pdf.text(`Contact Details: ${individualContact}`, 10, 50);
+                pdf.text(`Email ID: ${individualEmail}`, 10, 60);
+          
+                // Save PDF
+                pdf.save("individual_registration_details.pdf");
+          
+                // Show thank you message
+                alert('Thank you for registering! Your registration details have been saved as a PDF.');
+              });
+        
+              // Capture the form submit event for School or Teacher Registration
+              document.getElementById('schoolForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Fetch form data
+                const schoolName = document.getElementById('schoolName').value.trim();
+                const teacherName = document.getElementById('teacherName').value.trim();
+                const totalStudents = document.getElementById('totalStudents').value.trim();
+                const gradesSections = document.getElementById('gradesSections').value.trim();
+                const arrivalTime = document.getElementById('arrivalTime').value.trim();
+          
+                // Create PDF
+                const { jsPDF } = window.jspdf;
+                const pdf = new jsPDF();
+                pdf.text('School Registration Details', 10, 10);
+                pdf.text(`School Name: ${schoolName}`, 10, 20);
+                pdf.text(`Teacher's Name: ${teacherName}`, 10, 30);
+                pdf.text(`Total Number of Students: ${totalStudents}`, 10, 40);
+                pdf.text(`Grades/Sections: ${gradesSections}`, 10, 50);
+                pdf.text(`Arrival Time: ${arrivalTime}`, 10, 60);
+          
+                // Save PDF
+                pdf.save("school_registration_details.pdf");
+          
+                // Show thank you message
+                alert('Thank you for registering! Your registration details have been saved as a PDF.');
+              });
+            });
+        </script>
+
+        
+
+        
+    <!-- Bootstrap Scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

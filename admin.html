@@ -3,36 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        #authSection {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            border: 1px solid #ccc;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        input[type="text"], input[type="password"] {
-            margin-top: 10px;
-            padding: 10px;
-            width: 80%;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script>
         function checkCredentials() {
             const username = document.getElementById("username").value;
@@ -48,21 +19,20 @@
     </script>
 </head>
 <body>
-
-    <div id="authSection">
+    <div id="authSection" class="container mt-5">
         <h2>Login</h2>
         <label for="username">Username: </label>
-        <input type="text" id="username"><br>
+        <input type="text" id="username" class="form-control"><br>
         <label for="password">Password: </label>
-        <input type="password" id="password"><br>
-        <button onclick="checkCredentials()">Login</button>
+        <input type="password" id="password" class="form-control"><br>
+        <button onclick="checkCredentials()" class="btn btn-primary">Login</button>
         <div id="restrictedMessage" style="display:none; color: red; margin-top: 10px;">
             Restricted Page
         </div>
     </div>
-    <div id="dataSection" style="display:none;">
+    <div id="dataSection" style="display:none;" class="container mt-5">
         <h2>Admin Dashboard</h2>
-        <table border="1">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -87,6 +57,5 @@
             </tbody>
         </table>
     </div>
-
 </body>
 </html>

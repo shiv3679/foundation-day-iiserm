@@ -26,23 +26,37 @@ db.create_all()
 def home():
     return render_template("index.html")
 
-@app.route("/quiz", methods=["GET", "POST"])
-def quiz():
+@app.route("/individual_registration", methods=["POST"])
+def individual_registration():
     if request.method == "POST":
-        candidateName = request.form["candidateName"]
-        institutionName = request.form["institutionName"]
-        grade = request.form["grade"]
-        mobileNumber = request.form["mobileNumber"]
-        emailId = request.form["emailId"]
+        candidateName = request.form["individualName"]
+        institutionName = request.form["individualSchool"]
+        grade = request.form["individualGrade"]
+        mobileNumber = request.form["individualContact"]
+        emailId = request.form["individualEmail"]
 
         new_registration = Registration(candidateName=candidateName, institutionName=institutionName, grade=grade, mobileNumber=mobileNumber, emailId=emailId)
 
         db.session.add(new_registration)
         db.session.commit()
 
-        return redirect(url_for("quiz"))
+    return redirect(url_for("home"))
 
-    return render_template("quiz.html")
+@app.route("/school_registration", methods=["POST"])
+def school_registration():
+    if request.method == "POST":
+        candidateName = request.form["teacherName"]
+        institutionName = request.form["schoolName"]
+        grade = request.form["gradesSections"]
+        mobileNumber = request.form["totalStudents"]  # Note: You may want to change this to an actual contact number field in your form
+        emailId = "N/A"  # Note: You may want to add an email field to your school registration form
+
+        new_registration = Registration(candidateName=candidateName, institutionName=institutionName, grade=grade, mobileNumber=mobileNumber, emailId=emailId)
+
+        db.session.add(new_registration)
+        db.session.commit()
+
+    return redirect(url_for("home"))
 
 @app.route("/admin")
 def admin():

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jsPDF Test</title>
+    <script src="assets/js/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <h1>jsPDF Test Page</h1>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        try {
+          const doc = new jsPDF();
+          console.log("jsPDF loaded successfully:", doc);
+        } catch (error) {
+          console.error("Error initializing jsPDF:", error);
+        }
+      });
+    </script>
+  </body>
+</html>

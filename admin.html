@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #authSection {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="password"] {
+            margin-top: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function checkCredentials() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            if (username === "admin" && password === "password") {
+                document.getElementById("authSection").style.display = "none";
+                document.getElementById("dataSection").style.display = "block";
+            } else {
+                document.getElementById("restrictedMessage").style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="authSection">
+        <h2>Login</h2>
+        <label for="username">Username: </label>
+        <input type="text" id="username"><br>
+        <label for="password">Password: </label>
+        <input type="password" id="password"><br>
+        <button onclick="checkCredentials()">Login</button>
+        <div id="restrictedMessage" style="display:none; color: red; margin-top: 10px;">
+            Restricted Page
+        </div>
+    </div>
+    <div id="dataSection" style="display:none;">
+        <h2>Admin Dashboard</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Candidate's Name</th>
+                    <th>Institution Name</th>
+                    <th>Grade/Class</th>
+                    <th>Mobile Number</th>
+                    <th>Email ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for registration in registrations %}
+                <tr>
+                    <td>{{ registration.id }}</td>
+                    <td>{{ registration.candidateName }}</td>
+                    <td>{{ registration.institutionName }}</td>
+                    <td>{{ registration.grade }}</td>
+                    <td>{{ registration.mobileNumber }}</td>
+                    <td>{{ registration.emailId }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

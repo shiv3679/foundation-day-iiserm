@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Crossword</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for the registration form */
+        .registration-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-form label {
+            font-weight: bold;
+        }
+
+        .registration-form button {
+            width: 100%;
+        }
+
+        .registration-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .registration-form label {
+            font-weight: bold;
+        }
+
+        .registration-form .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+    </style>
+
+    <style>
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #printSection,
+            #printSection * {
+                visibility: visible;
+            }
+
+            #printSection {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">Foundation Day 2023</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="events.html">Demonstrations</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="registrations.html" class="get-started-btn">Register</a>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs" data-aos="fade-in">
+            <div class="container">
+                <h2>Crosswords Details</h2>
+                <p>Solve wordplays and unravel scientific phenomena in a day-long crossword adventure!
+                </p>
+            </div>
+        </div>
+        <!-- End Breadcrumbs -->
+
+        <!-- ======= Quiz Details Section ======= -->
+        <section id="quiz-details" class="course-details">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img src="assets/img/demos/trial/optimised_crossword.jpg" class="img-fluid" alt="">
+                        <h3>About Crosswords</h3>
+                        <p>
+                            This science-themed crossword will involve clever wordplays and probably you running around
+                            labs looking for clues. It will ensure you learn about the science behind various
+                            interesting natural phenomena. This event is open to everyone from classes 6-12, and the
+                            entire day will be given to complete the crossword.
+
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+
+                        <div class="course-info d-flex justify-content-between align-items-center">
+                            <h5>Organiser</h5>
+                            <p><a href="#">Literary and Debating Society (LDS)</a></p>
+                        </div>
+
+                        <div class="course-info d-flex justify-content-between align-items-center">
+                            <h5>Seats Left</h5>
+                            <p>NA</p>
+                        </div>
+
+                        <div class="course-info d-flex justify-content-between align-items-center">
+                            <h5>Schedule</h5>
+                            <p>10:00 AM - 1:00 PM</p>
+                        </div>
+
+                        <div class="pre-register-button text-center mt-4">
+                            <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#registrationForm" aria-expanded="false" aria-controls="registrationForm">
+                                Pre-Register
+                            </button>
+                        </div>
+
+                        <div class="collapse mt-4 registration-form" id="registrationForm">
+                            <form id="regForm">
+                                <div class="form-group">
+                                    <label for="candidateName">Candidate's Name</label>
+                                    <input type="text" class="form-control" id="candidateName"
+                                        placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="institutionName">Institution Name</label>
+                                    <input type="text" class="form-control" id="institutionName"
+                                        placeholder="Enter your institution name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="grade">Grade/Class</label>
+                                    <input type="text" class="form-control" id="grade"
+                                        placeholder="Enter your grade/class" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="tel" class="form-control" id="mobileNumber"
+                                        placeholder="Enter your mobile number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailId">Email ID</label>
+                                    <input type="email" class="form-control" id="emailId"
+                                        placeholder="Enter your email ID" required>
+                                </div>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+
+                        <!-- This section will hold the printable content -->
+                        <div id="printSection" style="display:none;">
+                            <!-- This is where you put everything you want to print -->
+                            <h1
+                                style="font-family: Arial, sans-serif; font-size: 24px; text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px;">
+                                Registration Details</h1>
+                            <div id="printCandidateName"
+                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 20px;">
+                            </div>
+                            <div id="printInstitutionName"
+                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
+                            </div>
+                            <div id="printGrade"
+                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
+                            <div id="printMobileNumber"
+                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
+                            </div>
+                            <div id="printEmailId"
+                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Quiz Details Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Address and Contact Information -->
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h3>IISER Mohali</h3>
+                        <p>
+                            Dean outreach and International Relations <br>
+                            Indian Institure of Science Education and Research (IISER),Mohali <br>
+                            Knowledge city, Sector 81, Manauli, PO<br>
+                            Sahibzada Ajit Singh Nagar, Punjab 140306<br>
+                            India<br><br>
+                            <strong>Phone:</strong> 0172 224 0124<br>
+                            <strong>Email:</strong> deanoutreach@iisermohali.ac.in<br>
+                        </p>
+                    </div>
+
+                    <!-- Useful Links -->
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="competitions.html">Competitions</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="events.html">Demonstrations</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="registrations.html">Registrations</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Location Map -->
+                    <div class="col-lg-4 col-md-12">
+                        <h4>Reach Us</h4>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.9410490715145!2d76.72695507631119!3d30.663788474617704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fe956a41db409%3A0x8f96794a996192bb!2sINDIAN%20INSTITUTE%20OF%20SCIENCE%20EDUCATION%20AND%20RESEARCH%2C%20INST%20Hostel%20Rd%2C%20Sector%2081%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140306!5e0!3m2!1sen!2sin!4v1694265091237!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>IISER-Mohali 2023</span></strong>. All Rights Reserved
+                </div>
+            </div>
+
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Capture the form submit event
+            document.getElementById('regForm').addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent default form submission
+
+                // Fetch form data
+                const candidateName = document.getElementById('candidateName').value.trim();
+                const institutionName = document.getElementById('institutionName').value.trim();
+                const grade = document.getElementById('grade').value.trim();
+                const mobileNumber = document.getElementById('mobileNumber').value.trim();
+                const emailId = document.getElementById('emailId').value.trim();
+
+                // Validate form fields
+                if (!candidateName || candidateName.length > 100) {
+                    alert('Candidate name is required and must be less than 100 characters.');
+                    return;
+                }
+                if (!institutionName || institutionName.length > 100) {
+                    alert('Institution name is required and must be less than 100 characters.');
+                    return;
+                }
+                if (!grade) {
+                    alert('Grade/Class is required.');
+                    return;
+                }
+                if (!mobileNumber || !/^\d{10}$/.test(mobileNumber)) {
+                    alert('Mobile Number is required and must be a 10-digit number.');
+                    return;
+                }
+                if (!emailId || !/\S+@\S+/.test(emailId)) {
+                    alert('Invalid Email ID.');
+                    return;
+                }
+
+                // Populate print section
+                document.getElementById('printCandidateName').innerText = "Candidate's Name: " + candidateName;
+                document.getElementById('printInstitutionName').innerText = "Institution Name: " + institutionName;
+                document.getElementById('printGrade').innerText = "Grade/Class: " + grade;
+                document.getElementById('printMobileNumber').innerText = "Mobile Number: " + mobileNumber;
+                document.getElementById('printEmailId').innerText = "Email ID: " + emailId;
+
+                // Show print section
+                document.getElementById('printSection').style.display = 'block';
+
+                // Trigger print dialog
+                window.print();
+
+                // Hide print section again
+                document.getElementById('printSection').style.display = 'none';
+
+                // Show thank you message
+                alert('Thank you for registering! Your registration details have been printed.');
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

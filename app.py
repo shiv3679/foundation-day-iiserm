@@ -19,8 +19,13 @@ class Registration(db.Model):
     mobileNumber = db.Column(db.String(20), nullable=False)
     emailId = db.Column(db.String(50), nullable=False)
 
-# Initialize database tables
-db.create_all()
+
+def init_db():
+    with app.app_context():
+        db.create_all()
+
+# Uncomment the following line if you want to initialize the database upon startup
+init_db()
 
 @app.route("/", methods=["GET"])
 def home():

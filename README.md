@@ -3,6 +3,7 @@
 ![Website](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fshiv3679.github.io%2Ffoundation-day-iiserm)
 ![Contributors](https://img.shields.io/github/contributors/shiv3679/foundation-day-iiserm)
 ![Last Commit](https://img.shields.io/github/last-commit/shiv3679/foundation-day-iiserm)
+![visitors](https://visitor-badge.glitch.me/badge?page_id=shiv3679.foundation-day-iiserm)
 
 The official website for the Foundation Day event at IISER Mohali. This project aims to provide a platform for registration, updates, and information related to the annual Foundation Day celebrations.
 

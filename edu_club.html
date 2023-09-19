@@ -100,6 +100,7 @@
           <li><a href="events.html">Demonstrations</a></li>
           <li><a href="schedule.html">Schedule</a></li>
           <li><a href="teams.html">Teams</a></li>
+            <li><a href="lecture.html">Foundation Day Lecture</a></li>
           <li><a href="admin.html">Admin</a></li>
 
                 </ul>
@@ -147,12 +148,12 @@
                             <h5>Organiser</h5>
                             <p><a href="#">Education Club</a></p>
                         </div>
-                        
+
                         <div class="course-info d-flex justify-content-between align-items-center">
                             <h5>Seats Left</h5>
                             <p>15 seats per grade category</p>
                         </div>
-                        
+
                         <div class="course-info d-flex justify-content-between align-items-center">
                             <h5>Schedule</h5>
                             <p>
@@ -161,67 +162,51 @@
                                 11-12 Grade: 1:00 PM - 2:30 PM
                             </p>
                         </div>
-                        
+
                         <div class="pre-register-button text-center mt-4">
                             <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                    data-target="#registrationForm" aria-expanded="false" aria-controls="registrationForm">
+                                data-target="#registrationForm" aria-expanded="false" aria-controls="registrationForm">
                                 Pre-Register
                             </button>
                         </div>
-                        
+
 
 
                         <div class="collapse mt-4 registration-form" id="registrationForm">
                             <form id="regForm">
                                 <div class="form-group">
                                     <label for="candidateName">Candidate's Name</label>
-                                    <input type="text" class="form-control" id="candidateName"
-                                        placeholder="Enter your name" required>
+                                    <input type="text" class="form-control" id="candidateName" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="institutionName">Institution Name</label>
-                                    <input type="text" class="form-control" id="institutionName"
-                                        placeholder="Enter your institution name" required>
+                                    <input type="text" class="form-control" id="institutionName" placeholder="Enter your institution name" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="grade">Grade/Class</label>
-                                    <input type="text" class="form-control" id="grade"
-                                        placeholder="Enter your grade/class" required>
+                                    <label for="gradeCategory">Grade Category</label>
+                                    <select class="form-control" id="gradeCategory" required>
+                                        <option value="">Select Category</option>
+                                        <option value="6-8 Grade"> Grade:6-8</option>
+                                        <option value="9-10 Grade"> Grade:9-10 </option>
+                                        <option value="11-12 Grade"> Grade: 11-12</option>
+                                    </select>
                                 </div>
+                                <!-- <div class="form-group">
+                                    <label for="grade">Grade/Class</label>
+                                    <input type="text" class="form-control" id="grade" placeholder="Enter your grade/class" required>
+                                </div> -->
                                 <div class="form-group">
                                     <label for="mobileNumber">Mobile Number</label>
-                                    <input type="tel" class="form-control" id="mobileNumber"
-                                        placeholder="Enter your mobile number" required>
+                                    <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter your mobile number" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="emailId">Email ID</label>
-                                    <input type="email" class="form-control" id="emailId"
-                                        placeholder="Enter your email ID" required>
+                                    <input type="email" class="form-control" id="emailId" placeholder="Enter your email ID" required>
                                 </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
-
-                        <!-- This section will hold the printable content -->
-                        <div id="printSection" style="display:none;">
-                            <!-- This is where you put everything you want to print -->
-                            <h1
-                                style="font-family: Arial, sans-serif; font-size: 24px; text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px;">
-                                Registration Details</h1>
-                            <div id="printCandidateName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 20px;">
-                            </div>
-                            <div id="printInstitutionName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printGrade"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                            <div id="printMobileNumber"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printEmailId"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                        </div>
+                        
 
                     </div>
                 </div>

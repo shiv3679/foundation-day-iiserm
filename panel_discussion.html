@@ -172,56 +172,38 @@
 
 
                         <div class="collapse mt-4 registration-form" id="registrationForm">
-                            <form id="regForm">
+                            <form id="regForm" action="https://formspree.io/f/mwkdnbkn" method="POST">
                                 <div class="form-group">
                                     <label for="candidateName">Candidate's Name</label>
-                                    <input type="text" class="form-control" id="candidateName"
-                                        placeholder="Enter your name" required>
+                                    <input type="text" class="form-control" id="candidateName" name="candidateName"
+                                           placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="institutionName">Institution Name</label>
-                                    <input type="text" class="form-control" id="institutionName"
-                                        placeholder="Enter your institution name" required>
+                                    <input type="text" class="form-control" id="institutionName" name="institutionName"
+                                           placeholder="Enter your institution name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="grade">Grade/Class</label>
-                                    <input type="text" class="form-control" id="grade"
-                                        placeholder="Enter your grade/class" required>
+                                    <input type="text" class="form-control" id="grade" name="grade"
+                                           placeholder="Enter your grade/class" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="mobileNumber">Submit Your question</label>
-                                    <input type="tel" class="form-control" id="mobileNumber"
-                                        placeholder="Write your question here" required>
+                                    <input type="tel" class="form-control" id="mobileNumber" name="question"
+                                           placeholder="Write your question here" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="emailId">Email ID</label>
-                                    <input type="email" class="form-control" id="emailId"
-                                        placeholder="Enter your email ID" required>
+                                    <input type="email" class="form-control" id="emailId" name="emailId"
+                                           placeholder="Enter your email ID" required>
                                 </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
+                        
 
-                        <!-- This section will hold the printable content -->
-                        <div id="printSection" style="display:none;">
-                            <!-- This is where you put everything you want to print -->
-                            <h1
-                                style="font-family: Arial, sans-serif; font-size: 24px; text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px;">
-                                Registration Details</h1>
-                            <div id="printCandidateName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 20px;">
-                            </div>
-                            <div id="printInstitutionName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printGrade"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                            <div id="printMobileNumber"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printEmailId"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                        </div>
+                       
 
                     </div>
                 </div>
@@ -308,7 +290,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Capture the form submit event
             document.getElementById('regForm').addEventListener('submit', function (e) {
@@ -363,7 +345,7 @@
                 alert('Thank you for registering! Your registration details have been printed.');
             });
         });
-    </script>
+    </script> -->
 
 
 

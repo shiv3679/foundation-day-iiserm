@@ -95,13 +95,13 @@
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="competitions.html">Competitions</a></li>
-          <li><a href="events.html">Demonstrations</a></li>
-          <li><a href="schedule.html">Schedule</a></li>
-          <li><a href="teams.html">Teams</a></li>
-            <li><a href="lecture.html">Foundation Day Lecture</a></li>
-          <li><a href="admin.html">Admin</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="events.html">Demonstrations</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="lecture.html">Foundation Day Lecture</a></li>
+                    <li><a href="admin.html">Admin</a></li>
 
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -165,56 +165,38 @@
                         </div>
 
                         <div class="collapse mt-4 registration-form" id="registrationForm">
-                            <form id="regForm">
+                            <form id="regForm" action="https://formspree.io/f/xdorlznj" method="POST">
                                 <div class="form-group">
                                     <label for="candidateName">Candidate's Name</label>
-                                    <input type="text" class="form-control" id="candidateName"
+                                    <input type="text" class="form-control" id="candidateName" name="candidateName"
                                         placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="institutionName">Institution Name</label>
-                                    <input type="text" class="form-control" id="institutionName"
+                                    <input type="text" class="form-control" id="institutionName" name="institutionName"
                                         placeholder="Enter your institution name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="grade">Grade/Class</label>
-                                    <input type="text" class="form-control" id="grade"
+                                    <input type="text" class="form-control" id="grade" name="grade"
                                         placeholder="Enter your grade/class" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="mobileNumber">Mobile Number</label>
-                                    <input type="tel" class="form-control" id="mobileNumber"
+                                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber"
                                         placeholder="Enter your mobile number" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="emailId">Email ID</label>
-                                    <input type="email" class="form-control" id="emailId"
+                                    <input type="email" class="form-control" id="emailId" name="emailId"
                                         placeholder="Enter your email ID" required>
                                 </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
 
-                        <!-- This section will hold the printable content -->
-                        <div id="printSection" style="display:none;">
-                            <!-- This is where you put everything you want to print -->
-                            <h1
-                                style="font-family: Arial, sans-serif; font-size: 24px; text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px;">
-                                Registration Details</h1>
-                            <div id="printCandidateName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 20px;">
-                            </div>
-                            <div id="printInstitutionName"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printGrade"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                            <div id="printMobileNumber"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;">
-                            </div>
-                            <div id="printEmailId"
-                                style="font-family: Arial, sans-serif; font-size: 18px; margin-top: 10px;"></div>
-                        </div>
+
+
 
                     </div>
                 </div>
@@ -284,8 +266,10 @@
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
                 <a href="https://twitter.com/Foundation_Day_" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-                <a href="https://instagram.com/foundationday_iiserm?igshid=MzMyNGUyNmU2YQ==" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.youtube.com/@FoundationDayIISERM" class="linkedin"><i class="bx bxl-youtube"></i></a>
+                <a href="https://instagram.com/foundationday_iiserm?igshid=MzMyNGUyNmU2YQ==" class="instagram"><i
+                        class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/@FoundationDayIISERM" class="linkedin"><i
+                        class="bx bxl-youtube"></i></a>
             </div>
         </div>
     </footer>
@@ -301,7 +285,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Capture the form submit event
             document.getElementById('regForm').addEventListener('submit', function (e) {
@@ -356,7 +340,7 @@
                 alert('Thank you for registering! Your registration details have been printed.');
             });
         });
-    </script>
+    </script> -->
 
 
 

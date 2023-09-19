@@ -173,39 +173,36 @@
 
 
                         <div class="collapse mt-4 registration-form" id="registrationForm">
-                            <form id="regForm">
+                            <form id="regForm" action = "https://formspree.io/f/mqkvdbzv" method = "POST">
                                 <div class="form-group">
                                     <label for="candidateName">Candidate's Name</label>
-                                    <input type="text" class="form-control" id="candidateName" placeholder="Enter your name" required>
+                                    <input type="text" class="form-control" id="candidateName" name="candidateName" placeholder="Enter your name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="institutionName">Institution Name</label>
-                                    <input type="text" class="form-control" id="institutionName" placeholder="Enter your institution name" required>
+                                    <input type="text" class="form-control" id="institutionName" name="institutionName" placeholder="Enter your institution name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="gradeCategory">Grade Category</label>
-                                    <select class="form-control" id="gradeCategory" required>
+                                    <select class="form-control" id="gradeCategory" name="gradeCategory" required>
                                         <option value="">Select Category</option>
-                                        <option value="6-8 Grade"> Grade:6-8</option>
-                                        <option value="9-10 Grade"> Grade:9-10 </option>
-                                        <option value="11-12 Grade"> Grade: 11-12</option>
+                                        <option value="6-8 Grade">Grade: 6-8</option>
+                                        <option value="9-10 Grade">Grade: 9-10</option>
+                                        <option value="11-12 Grade">Grade: 11-12</option>
                                     </select>
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label for="grade">Grade/Class</label>
-                                    <input type="text" class="form-control" id="grade" placeholder="Enter your grade/class" required>
-                                </div> -->
                                 <div class="form-group">
                                     <label for="mobileNumber">Mobile Number</label>
-                                    <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter your mobile number" required>
+                                    <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="emailId">Email ID</label>
-                                    <input type="email" class="form-control" id="emailId" placeholder="Enter your email ID" required>
+                                    <input type="email" class="form-control" id="emailId" name="emailId" placeholder="Enter your email ID" required>
                                 </div>
                                 <button type="submit" class="btn btn-success">Submit</button>
                             </form>
                         </div>
+                        
                         
 
                     </div>
@@ -293,7 +290,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Capture the form submit event
             document.getElementById('regForm').addEventListener('submit', function (e) {
@@ -348,7 +345,7 @@
                 alert('Thank you for registering! Your registration details have been printed.');
             });
         });
-    </script>
+    </script> -->
 
 
 
